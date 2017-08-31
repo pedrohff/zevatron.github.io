@@ -1,22 +1,18 @@
-var cacheName = 'weatherPWA-step-6-1';
+var cacheName = 'servJudTREPB';
 var filesToCache = [
   '/',
   '/index.html',
-  '/scripts/app.js',
-  '/styles/inline.css',
-  '/images/clear.png',
-  '/images/cloudy-scattered-showers.png',
-  '/images/cloudy.png',
-  '/images/fog.png',
-  '/images/ic_add_white_24px.svg',
-  '/images/ic_refresh_white_24px.svg',
-  '/images/partly-cloudy.png',
-  '/images/rain.png',
-  '/images/scattered-showers.png',
-  '/images/sleet.png',
-  '/images/snow.png',
-  '/images/thunderstorm.png',
-  '/images/wind.png'
+  '/sobre.html',
+  '/css/bootstrap-theme.min.css',
+  '/css/main.css',
+  '/css/bootstrap.min.css',
+  '/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js',
+  '/js/vendor/jquery-1.11.0.min.js',
+  '/js/fastclick/lib/fastclick.js',
+  '/js/vendor/bootstrap.min.js',
+  '/js/main.js',
+  '/img/logo.png',
+  '/img/tre-pb.png'
 ];
 
 
@@ -52,5 +48,3 @@ self.addEventListener('fetch', function(e) {
     })
   );
 });
-
-
