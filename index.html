@@ -80,39 +80,39 @@ hr {
 	</div>
 	<div class="container" style="padding: 0px 10px;">
 		<div class="linha">
-			<a class="btn btn-default btn-lg btn-block" href="#"
-				onclick="abrirWebView('http://apps.tre-pb.jus.br/sadJudSadp/julgamento/');">
-				Pauta de Julgamentos &raquo;</a>
+			<a class="btn btn-default btn-lg btn-block" href="http://apps.tre-pb.jus.br/sadJudSadp/julgamento/">
+				Pauta de Julgamentos &raquo;
+			</a>
 		</div>
 		<div class="linha">
-			<a class="btn btn-default btn-lg btn-block" href="#"
-				onclick="abrirWebView('http://apps.tre-pb.jus.br/sadJudSadpMural/mural/');">
-				Mural Eletrônico &raquo;</a>
+			<a class="btn btn-default btn-lg btn-block" href="http://apps.tre-pb.jus.br/sadJudSadpMural/mural/">
+				Mural Eletrônico &raquo;
+			</a>
 		</div>
 		<div class="linha">
-			<a class="btn btn-default btn-lg btn-block" href="#"
-				onclick="abrirNavegador('http://inter03.tse.jus.br/SJur/pesquisa/index.jsp?pageForm=formAvancado.jsp');">
-				Pesquisa Jurisprudência &raquo;</a>
+			<a class="btn btn-default btn-lg btn-block" href="'http://inter03.tse.jus.br/SJur/pesquisa/index.jsp?pageForm=formAvancado.jsp">
+				Pesquisa Jurisprudência &raquo;
+			</a>
 		</div>
 		<div class="linha">
-			<a class="btn btn-default btn-lg btn-block" href="#"
-				onclick="abrirWebView('http://inter03.tse.jus.br/InteiroTeor/pesquisa/index.jsp?sectionServers=PB');">
-				Inteiro Teor &raquo;</a>
+			<a class="btn btn-default btn-lg btn-block" href="http://inter03.tse.jus.br/InteiroTeor/pesquisa/index.jsp?sectionServers=PB">
+				Inteiro Teor &raquo;
+			</a>
 		</div>
 		<div class="linha">
-			<a class="btn btn-default btn-lg btn-block" href="#"
-				onclick="abrirWebView('http://inter03.tse.jus.br/sadpPush');">
-				Acompanhamento Processual &raquo;</a>
+			<a class="btn btn-default btn-lg btn-block" href="http://inter03.tse.jus.br/sadpPush">
+				Acompanhamento Processual &raquo;
+			</a>
 		</div>
 		<div class="linha">
-			<a class="btn btn-default btn-lg btn-block" href="#"
-				onclick="abrirNavegador('http://apps.tre-pb.jus.br/iplenoweb/');">
-				Acompanhe a Sessão &raquo;</a>
+			<a class="btn btn-default btn-lg btn-block" href="http://apps.tre-pb.jus.br/iplenoweb/">
+				Acompanhe a Sessão &raquo;
+			</a>
 		</div>
 		<div class="linha">
-			<a class="btn btn-default btn-lg btn-block" href="#"
-				onclick="abrirNavegador('http://apps.tre-pb.jus.br/ords/f?p=100:26:::NO');">
-				Painel Cadastramento Biométrico &raquo;</a>
+			<a class="btn btn-default btn-lg btn-block" href="http://apps.tre-pb.jus.br/ords/f?p=100:26:::NO">
+				Painel Cadastramento Biométrico &raquo;
+			</a>
 		</div>
 	</div>
 	<hr>
@@ -132,6 +132,16 @@ hr {
 
 	<script type="text/javascript">
 		app.initialize();
+	</script>
+
+	<script type="text/javascript">
+		var a=document.getElementsByTagName("a");
+		for(var i=0;i<a.length;i++) {
+		a[i].onclick=function() {
+		    window.location=this.getAttribute("href");
+		    return false
+		}
+		}
 	</script>
 </body>
 </html>
